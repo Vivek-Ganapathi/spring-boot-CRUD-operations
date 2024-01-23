@@ -1,0 +1,14 @@
+type Employee{
+    id: ID!
+    name: String!
+    address: String!
+    contact: ID!
+}
+type Query{
+    getEmployeeData: Employee!
+}
+
+type Mutation{
+    addData(id: ID!, name: String!, address: String!, contact: ID!): Employee!
+    deleteEmployee(id: ID!): Employee!
+}
